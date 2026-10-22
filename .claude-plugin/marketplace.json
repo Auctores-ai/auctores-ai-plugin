@@ -1,0 +1,15 @@
+{
+  "name": "auctores",
+  "description": "Auctores plugin for Claude: read-only hotel insights from your Auctores account.",
+  "owner": {
+    "name": "Auctores",
+    "email": "info@auctores.ai"
+  },
+  "plugins": [
+    {
+      "name": "auctores",
+      "source": "./",
+      "description": "Read-only Auctores hotel insights: occupancy after cancellations, at-risk reservations, cancellation patterns, reported recovery and availability explanations."
+    }
+  ]
+}

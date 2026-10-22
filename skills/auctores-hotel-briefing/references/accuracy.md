@@ -1,0 +1,11 @@
+# Prediction quality follow-up
+
+Use `get_accuracy_report` only for requested model-quality questions or a material follow-up. Pass the property scope and `granularity: weekly` (or `daily` for a close investigation), optional `date_from`/`date_to`, and a modest `limit`. Defaults are four weekly or 28 daily periods. The tool has no offset; honor `possibly_truncated`.
+
+- Compare completed returned periods, using the reported denominator. Open periods are not final outcomes; keep exclusions visible.
+- Predicted cancellations/no-shows, actual cancellations/no-shows and recommended overbooking are different quantities. Recommendation depends on strategy and is not the model's entire predicted cancellation count.
+- For frontend comparison, match arrival weeks versus stay days and the actual completed date range, not just the default MCP limit. Predictions come from the accuracy tracker; historical snapshots enrich recommendations only. Top-level results and frontend KPI cards use maximum recommendations; the frontend chart/table can switch to average. Use the matching `recommendation_views.maximum` or `.average`, whose metrics and rows are calculated by the endpoint. If those views/definitions are absent, disclose the older server contract instead of presenting its average as the frontend maximum.
+- `recommendation_utilization_rate` is the share of predicted cancellations covered by the recommendation for periods with recommendation evidence. It is not an accuracy score. Keep prediction gaps separate from recommendation gaps.
+- Inspect `data_quality` before calling a rate performance or accuracy. Rates outside 0-1, counts beyond denominators or snapshot/tracker grain warnings cannot establish validated model performance. Preserve raw evidence, explain the problem, and do not cap invalid rates to make them plausible.
+- `recommendation_enrichment.available: false` leaves base tracker data usable on its own terms; it does not mean zero recommendations. Snapshot recommendations may use historical strategy different from today's configuration.
+- Distinguish a rate, percentage-point gap and accuracy claim. A cancellation-rate difference alone is not classification accuracy or evidence of incremental revenue. State dates, sample count, completed-period coverage and any unresolved warning.

@@ -1,0 +1,13 @@
+{
+  "name": "auctores",
+  "displayName": "Auctores",
+  "version": "0.1.0",
+  "description": "Read-only Auctores hotel insights in Claude: cancellation-adjusted occupancy, at-risk reservations, cancellation patterns, reported recovery and availability explanations.",
+  "author": {
+    "name": "Auctores",
+    "email": "info@auctores.ai",
+    "url": "https://www.auctores.ai"
+  },
+  "homepage": "https://www.auctores.ai",
+  "keywords": ["hotel", "revenue management", "cancellations", "overbooking", "hospitality"]
+}
