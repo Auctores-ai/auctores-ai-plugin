@@ -2,12 +2,18 @@
   "name": "auctores",
   "displayName": "Auctores",
   "version": "0.1.0",
-  "description": "Read-only Auctores hotel insights in Claude: cancellation-adjusted occupancy, at-risk reservations, cancellation patterns, reported recovery and availability explanations.",
+  "description": "Read-only Auctores hotel data in Claude: bookings likely to cancel, expected occupancy, Smart Overbooking suggestions, Cancellation Intelligence and recovered revenue.",
   "author": {
-    "name": "Auctores",
+    "name": "Auctores Technologies OÜ",
     "email": "info@auctores.ai",
     "url": "https://www.auctores.ai"
   },
   "homepage": "https://www.auctores.ai",
-  "keywords": ["hotel", "revenue management", "cancellations", "overbooking", "hospitality"]
+  "keywords": [
+    "hotel",
+    "revenue management",
+    "cancellations",
+    "overbooking",
+    "hospitality"
+  ]
 }

@@ -9,7 +9,7 @@
     {
       "name": "auctores",
       "source": "./",
-      "description": "Read-only Auctores hotel insights: occupancy after cancellations, at-risk reservations, cancellation patterns, reported recovery and availability explanations."
+      "description": "Read-only Auctores hotel data: bookings likely to cancel, expected occupancy, Smart Overbooking suggestions, Cancellation Intelligence and recovered revenue."
     }
   ]
 }
