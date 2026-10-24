@@ -1,6 +1,6 @@
 ---
-name: auctores-recovery-report
-description: Report Auctores hotel recovery impact and attributed booking details, separating source-reported realised revenue, pipeline, cancellations and gross booking values. Use for recovery reviews and booking reconciliation; not general hotel revenue, invoicing or prediction accuracy.
+name: recovery-report
+description: Report the room revenue Auctores recovered for a hotel and the bookings behind it, keeping realised revenue, future bookings and cancellations apart. Use for recovery reviews and booking reconciliation; not total hotel revenue, invoices or prediction accuracy.
 ---
 
 # Recovery report

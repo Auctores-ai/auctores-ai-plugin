@@ -1,6 +1,6 @@
 ---
-name: auctores-cancellation-analysis
-description: Analyze historical Auctores hotel cancellation and no-show patterns by channel, room category, stay profile, season or timing. Use for comparisons and cancellation-pattern questions; not predictions for individual bookings or proof of marketing causality.
+name: cancellation-analysis
+description: Analyse historical hotel cancellation and no-show patterns with Auctores Cancellation Intelligence: rates by channel, room type, travel purpose, stay profile, season and timing (booking window, how close to arrival guests cancel). Use for comparisons and "where do our cancellations come from?" questions; not predictions for individual bookings or proof of why guests cancel.
 ---
 
 # Cancellation analysis

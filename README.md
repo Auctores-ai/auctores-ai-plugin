@@ -1,16 +1,16 @@
 # Auctores for Claude
 
-Ask Claude about your hotel's [Auctores](https://www.auctores.ai) data in plain language: expected occupancy after predicted cancellations and no-shows, bookings likely to cancel, where cancellations come from, recovered revenue, and why extra availability changed.
+Ask Claude about your hotel's cancellations and no-shows. This plugin connects Claude to your [Auctores](https://www.auctores.ai) account, read-only, and adds five ready-made workflows: a briefing for your revenue meeting, a review of bookings likely to cancel, a Cancellation Intelligence analysis, a recovered-revenue report and an explanation of availability changes.
 
 ## What this plugin contains
 
 - **Auctores connector**: the remote MCP server at `https://mcp.auctores.ai/mcp` (22 read-only tools).
-- **Five skills** that guide Claude through common hotel workflows:
-  - `auctores-hotel-briefing`: the coming days, Smart Overbooking suggestions, data freshness and prediction accuracy.
-  - `auctores-reservation-risk-review`: bookings most likely to cancel or not show up.
-  - `auctores-cancellation-analysis`: Cancellation Intelligence patterns by channel, room type, stay profile, season and timing.
-  - `auctores-recovery-report`: recovered revenue for a period, with the bookings behind it.
-  - `auctores-availability-explanation`: why extra availability changed, using strategy, paused dates and recorded PMS updates.
+- **Five skills:**
+  - `hotel-briefing`: the coming weeks for your revenue meeting: expected occupancy, Smart Overbooking suggestions, data freshness and prediction accuracy.
+  - `reservation-risk-review`: bookings most likely to cancel or not show up.
+  - `cancellation-analysis`: Cancellation Intelligence patterns by channel, room type, stay profile, season and timing.
+  - `recovery-report`: recovered revenue for a period, with the bookings behind it.
+  - `availability-explanation`: why extra availability changed, using your strategy, date-range overrides and recorded PMS updates.
 
 ## What it connects to and sends
 
@@ -21,26 +21,27 @@ Ask Claude about your hotel's [Auctores](https://www.auctores.ai) data in plain 
 
 ## Install
 
-- **Claude (web, desktop, mobile):** add Auctores from the Claude directory, or upload this plugin under Customize → Plugins.
+- **Claude (web and desktop app):** open **Customize > Plugins**, select **Discover**, find **Auctores** and select **Add**. Then open the plugin's **Connectors** tab and connect Auctores with your Auctores account. The plugin then also works in the mobile app, Cowork and Claude Code. Directory plugins are available on Pro, Max, Team and Enterprise plans.
 - **Claude Code:**
 
   ```
   /plugin install auctores --marketplace Auctores-ai/auctores-ai-plugin
   ```
 
-Then connect the Auctores connector and sign in with your Auctores account.
+  Requires Claude Code 2.1.275 or later. Then run `/mcp` and sign in.
 
 ## Requirements
 
-An Auctores account with a hotel connected through its PMS (apaleo or Mews) and set up in Auctores. Cancellation Intelligence through this plugin is currently available for apaleo hotels.
+An Auctores account with a hotel connected through its PMS (apaleo or Mews) and set up in Auctores. Through this plugin, Cancellation Intelligence is currently available for apaleo hotels.
 
 ## Example prompts
 
 - Brief me on the next two weeks for my hotel.
 - Which bookings arriving next week are most likely to cancel or not show up?
-- Which booking channels have the highest cancellation rate, and how close to arrival do guests cancel?
+- Which booking channels have the highest cancellation and no-show rates, and how close to arrival do guests cancel?
 - How much revenue did Auctores recover for us last month, and which bookings are behind it?
-- Why is no extra availability suggested for my hotel on a specific date?
+- Why is no extra availability suggested on some dates in the next two weeks?
+- How many extra rooms does Smart Overbooking suggest for this weekend, by room type?
 
 ## Support
 

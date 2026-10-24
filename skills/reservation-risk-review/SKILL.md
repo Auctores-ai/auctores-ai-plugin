@@ -1,6 +1,6 @@
 ---
-name: auctores-reservation-risk-review
-description: Find and explain individual Auctores hotel reservations with high predicted cancellation or no-show risk, including top-risk lists and reservation-ID lookups. Use for arrival, departure or stayover review; not historical channel cancellation rates or guest outreach.
+name: reservation-risk-review
+description: Find and explain individual hotel bookings that Auctores predicts are likely to cancel or not show up, including top-risk lists by arrival, departure or stay date and reservation-ID lookups. Use for arrival and stayover reviews; not historical cancellation rates by channel or contacting guests.
 ---
 
 # Reservation risk review

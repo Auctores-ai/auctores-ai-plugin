@@ -9,7 +9,7 @@
     {
       "name": "auctores",
       "source": "./",
-      "description": "Read-only Auctores hotel data: bookings likely to cancel, expected occupancy, Smart Overbooking suggestions, Cancellation Intelligence and recovered revenue."
+      "description": "Ask Claude about your hotel's cancellations and no-shows, with ready-made workflows for the revenue meeting, bookings likely to cancel, recovered revenue and availability changes. Read-only."
     }
   ]
 }

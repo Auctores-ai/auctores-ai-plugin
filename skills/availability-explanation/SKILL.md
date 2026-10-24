@@ -1,6 +1,6 @@
 ---
-name: auctores-availability-explanation
-description: Explain Auctores hotel availability changes, Auto Apply or strategy settings using recommendations, overrides and recorded PMS actions. Use for why-did-it-change or why-was-nothing-applied questions; read-only diagnosis cannot change settings or prove unlogged PMS activity.
+name: availability-explanation
+description: Explain why Auctores extra availability (Smart Overbooking) changed or was not applied on a date, using the strategy, Auto Apply setting, date-range overrides and recorded PMS updates. Use for "why did it change?" or "why was nothing applied?" questions; read-only, so it cannot change settings or confirm PMS changes that were not logged.
 ---
 
 # Availability explanation

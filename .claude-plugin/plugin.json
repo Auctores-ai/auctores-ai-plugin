@@ -2,7 +2,7 @@
   "name": "auctores",
   "displayName": "Auctores",
   "version": "0.1.0",
-  "description": "Read-only Auctores hotel data in Claude: bookings likely to cancel, expected occupancy, Smart Overbooking suggestions, Cancellation Intelligence and recovered revenue.",
+  "description": "Ask Claude about your hotel's cancellations and no-shows, with ready-made workflows for the revenue meeting, bookings likely to cancel, recovered revenue and availability changes. Read-only.",
   "author": {
     "name": "Auctores Technologies OÜ",
     "email": "info@auctores.ai",
@@ -14,6 +14,11 @@
     "revenue management",
     "cancellations",
     "overbooking",
-    "hospitality"
+    "hospitality",
+    "no-shows",
+    "Cancellation Intelligence",
+    "PMS",
+    "apaleo",
+    "Mews"
   ]
 }
