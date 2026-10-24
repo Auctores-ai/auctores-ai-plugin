@@ -10,7 +10,7 @@
 
 Impact accepts a source string, not a calendar date. Reuse the returned value if the source differs. All-time impact does not apply `date_reference`. Weekly/monthly rows use `date` for bucket start; a requested month is normally its first-day bucket. Arbitrary partial-week/month totals cannot be reconstructed from full buckets. Detail filters include the entire end date.
 
-For frontend comparison, its monthly/weekly KPI cards use the latest matching bucket, while MCP combined metrics cover all returned rows within one group. Compare that specific row's metrics with the card. The frontend's all-time charts still use weekly/monthly history; an all-time total alone does not reproduce those series.
+To compare with the Auctores app: its monthly/weekly KPI cards use the latest matching bucket, while the tool's combined metrics cover all returned rows within one group. Compare that specific row's metrics with the card. The app's all-time charts still use weekly/monthly history; an all-time total alone does not reproduce those series.
 
 ## Inspect before totaling
 
@@ -18,8 +18,8 @@ Impact returns source `rows`, per-row `metrics`, separate `groups`, top-level `m
 
 The server keeps currencies separate and leaves unknown currency null. Groups with missing currency or missing weekly/monthly date basis retain raw rows but no aggregate. Explain the source gap; do not supply a currency or total it yourself. For a requested subset of valid period rows within one group, use unrounded row amounts then round for display; chart amounts may already be rounded.
 
-Source impact counts distinguish checked-in/realised, cancelled and confirmed. `realization_rate` is the settled-booking rate, checked-in / (checked-in + cancelled), matching the frontend's denominator. `checked_in_share_of_total` includes pipeline and is separately named. Both are null when their denominator is zero. Use the returned definitions; date-filtered calculations must keep the same group and denominator.
+Source impact counts distinguish checked-in/realised, cancelled and confirmed. `realization_rate` is the settled-booking rate, checked-in / (checked-in + cancelled), matching the Auctores app's denominator. `checked_in_share_of_total` includes future bookings and is separately named. Both are null when their denominator is zero. Use the returned definitions; date-filtered calculations must keep the same group and denominator.
 
-Recovery detail returns `data` rows, `filters`, `interpretation` and `pagination`. It contains reservation ID, booking/arrival/departure dates, currency, `total_gross_amount` and `checked_in`. An ID filter is exact, unlike at-risk search. False does not distinguish future, cancelled, no-show or other outcomes. Group gross amounts by currency and report them as attributed booking values, not independently verified realised revenue.
+Recovery detail returns `data` rows, `filters`, `interpretation` and `pagination`. It contains reservation ID, booking/arrival/departure dates, currency, `total_gross_amount` and `checked_in`. An ID filter is exact, unlike at-risk search. False does not distinguish future, cancelled, no-show or other outcomes. Group gross amounts by currency and report them as gross booking values; realised recovered revenue comes from the impact report.
 
 Do not expect detail and impact totals to agree until date basis, time window, population, pagination, currency and source refresh align. The tools do not expose a complete current-status reconciliation or cash/ledger audit. Missing matching evidence should remain a stated limitation.

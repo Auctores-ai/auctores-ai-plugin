@@ -11,9 +11,9 @@ Read [common guidance](references/common.md). Build a dated evidence trail; do n
 
 Distinguish the **affected stay date(s)** from **when the change was observed/pushed**, plus property and room category if material. “Why did availability change yesterday?” may mean either yesterday's stay dates or a change observed yesterday for next month. Ask for the affected stay dates when they cannot be inferred.
 
-For “what are my settings?” use `get_overbooking_task` alone unless history is requested. Explain returned parameters such as `service_level`, `write_availability`, room scope, cap and cutoff without inventing strategy percentages. Current settings do not prove past settings.
+For “what are my settings?” use `get_overbooking_task` alone unless history is requested. Use the plain labels in `settings` (strategy, Auto Apply, overbooking cut-off, daily overbooking cap, room types) without inventing strategy percentages. Current settings do not prove past settings.
 
-`overbooking_hard_cap_days` is the minimum advance notice for applying overbooking (5 means a five-day lead-time cutoff, not a five-room cap). `overbooking_max_value` is the maximum allowed overbooking per day; null means no explicit daily maximum, not zero. `overbook_full_property: true` makes selected `room_type_ids` irrelevant, with exclusions still meaningful. These configuration definitions do not establish the exact historical application time or an unreturned boundary rule.
+`overbooking_hard_cap_days` is the minimum advance notice for applying overbooking (5 means a five-day cut-off before arrival, not a five-room cap). `overbooking_max_value` is the maximum allowed overbooking per day; null means no explicit daily maximum, not zero. `overbook_full_property: true` makes selected `room_type_ids` irrelevant, with exclusions still meaningful. These configuration definitions do not establish the exact historical application time or an unreturned boundary rule.
 
 ## Collect only relevant evidence
 
@@ -31,6 +31,6 @@ Show a short chronology/table of affected date, event time, recommendation/overr
 - An amount of zero is a recorded set-to-zero action, not “no action.” Log amounts are target allowances, not additive increments; do not sum repeated pushes.
 - Separate current configuration from the configuration when an action happened. Use matching historical evidence for a causal explanation; proximity in time or a similar amount alone is insufficient.
 - If logs, override metadata or historical context are missing, explain exactly which cause cannot be established. An empty history is not proof that the PMS never changed or that another system did it.
-- When asked to change strategy, pause Auto Apply, undo an action or push rooms, say the MCP cannot execute that change. Provide the requested explanation or a clearly unexecuted proposal; do not use a browser/database/other connector to bypass the read-only boundary.
+- When asked to change strategy, pause Auto Apply, undo an action or push rooms, say that Auctores in Claude is read-only and that the change is made in the Auctores app (strategy settings or date-range overrides). Provide the requested explanation or a clearly unexecuted proposal; do not use a browser/database/other connector to bypass the read-only boundary.
 
 Lead with the supported explanation and its confidence, or the specific missing evidence. Cite dated facts in plain language and distinguish confirmed records from hypotheses.

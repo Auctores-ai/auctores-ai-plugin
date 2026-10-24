@@ -1,6 +1,6 @@
 ---
 name: hotel-briefing
-description: Brief a hotel team on the coming days or weeks from Auctores: expected occupancy after likely cancellations and no-shows, Smart Overbooking suggestions (extra rooms to offer), data freshness and prediction accuracy. Use for the daily revenue meeting and forward planning; not a market-demand forecast or a list of individual bookings at risk.
+description: "Brief a hotel team on the coming days or weeks from Auctores: expected occupancy after likely cancellations and no-shows, Smart Overbooking suggestions (extra rooms to offer), data freshness and prediction accuracy. Use for the daily revenue meeting and forward planning; not a market-demand forecast or a list of individual bookings at risk."
 ---
 
 # Hotel briefing

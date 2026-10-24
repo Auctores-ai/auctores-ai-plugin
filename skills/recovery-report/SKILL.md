@@ -14,13 +14,13 @@ Read [common guidance](references/common.md) and [impact and detail contract](re
 - Use the server's `groups` for each date basis and currency. Combined `metrics`/`chart` are null/empty when the response has multiple groups; this is not zero recovery. Choose the requested group and period, retaining `data_quality` warnings. Do not add groups from different date bases or currencies.
 - Impact has no `date_from`, `date_to` or `offset`. If a filled limit prevents reaching a requested old period, increase the limit within its 1000 maximum only as needed; at the cap, state incomplete coverage. Missing period rows are unavailable, not zero recovery. Do not substitute lifetime values for this month.
 - For booking evidence/export questions, use `get_recovery_reservations` with explicit dates, `date_reference`, optional `checked_in` or exact `reservation_id`, `limit` and `offset`. Follow every page for requested full totals. The detail response's `date_reference` values differ from impact's.
-- Summarize detail by original currency and checked-in flag without converting currencies or inferring cancelled/pipeline status from false. Gross booking amounts and impact aggregates can differ in period, population, outcome definition or source refresh; test those explanations before comparing totals.
+- Summarize detail by original currency and checked-in flag without converting currencies or inferring cancelled or future-booking status from false. Gross booking amounts and impact aggregates can differ in period, population, outcome definition or source refresh; test those explanations before comparing totals.
 
 ## What can be claimed
 
 Call it recovered revenue: the gross revenue of bookings accepted when the room type was already full, as recorded in the PMS. Use “realised” for the checked-in part the source reports as realised. Do not call it cash received, profit or an invoice amount, and do not derive fees/invoices from marketing pricing. If the user asks whether these bookings are proven extra revenue, explain what the figure measures.
 
-Separate reported realised, cancelled and confirmed/pipeline values where the source actually supplies them. Detail supplies only gross and checked-in state; it cannot reconstruct all three groups. A quality or refresh limitation remains visible even when a figure is nonzero.
+Separate reported realised, cancelled and confirmed/future-booking values where the source actually supplies them. Detail supplies only gross and checked-in state; it cannot reconstruct all three groups. A quality or refresh limitation remains visible even when a figure is nonzero.
 
 Use the server's `realization_rate`: checked-in / (checked-in + cancelled), excluding pending bookings. It is null with no settled bookings. `checked_in_share_of_total` is a different measure that includes pending bookings in its denominator. Label the measure and preserve the returned definition.
 

@@ -1,6 +1,6 @@
 ---
 name: cancellation-analysis
-description: Analyse historical hotel cancellation and no-show patterns with Auctores Cancellation Intelligence: rates by channel, room type, travel purpose, stay profile, season and timing (booking window, how close to arrival guests cancel). Use for comparisons and "where do our cancellations come from?" questions; not predictions for individual bookings or proof of why guests cancel.
+description: 'Analyse historical hotel cancellation and no-show patterns with Auctores Cancellation Intelligence: rates by channel, room type, travel purpose, stay profile, season and timing (booking window, how close to arrival guests cancel). Use for comparisons and "where do our cancellations come from?" questions; not predictions for individual bookings or proof of why guests cancel.'
 ---
 
 # Cancellation analysis
@@ -15,7 +15,7 @@ Read [common guidance](references/common.md). Choose only the analytical views n
 | How has the rate changed; what is seasonal? | `get_cancellation_trends`; `period: history\|last_year`, `date_from`, `date_to`, `reference_date`, `seasonality: month\|week` |
 | How early are bookings made or cancellations made? | `get_cancellation_timing`; `period: history\|current_year`, `dimension: lead_time\|days_before_arrival\|days_blocked` |
 
-All need the composite property scope. Analytics currently supports Apaleo and BeSafe; other Auctores/PMS features may still work for other vendors. Use an already known vendor or `get_overbooking_task` if needed; honor `UNSUPPORTED_ANALYTICS_VENDOR` and source availability. Do not replace unavailable history with reservation predictions.
+All need the composite property scope. Analytics currently supports apaleo and BeSafe; other Auctores/PMS features may still work for other vendors. Use an already known vendor or `get_overbooking_task` if needed; honor `UNSUPPORTED_ANALYTICS_VENDOR` and source availability. Do not replace unavailable history with reservation predictions.
 
 Breakdown/timing have no arbitrary date-range filter: do not claim an exact last-month channel/timing analysis from all-history rows. Explain that limit and use supported periods, or trends for a date-bounded overall comparison. `current_year` selects source bucket 1; `history` includes nonnegative source year buckets. If exact calendar coverage is absent, say so.
 

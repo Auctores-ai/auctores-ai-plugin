@@ -23,11 +23,11 @@ Rows are ordered by lowest `arrival_probability`. Cancellation-or-no-show risk i
 
 Show reservation ID, room category, arrival/departure and estimated risk in a compact ranked table. Avoid multiplying reservation probabilities by revenue or rooms unless compatible values were actually supplied.
 
-Mention `filters.active_status_filter_available: false` if returned: the server could not apply the active-status filter, so active-booking status is unverified. `cancellation_mix` counts only returned rows by room category; it is neither a property cancellation rate nor the frontend's independently filtered full population.
+Mention `filters.active_status_filter_available: false` if returned: the server could not apply the active-status filter, so active-booking status is unverified. `cancellation_mix` counts only returned rows by room category; it is neither a property cancellation rate nor the Auctores app's independently filtered full population.
 
 For a requested complete list/count, follow `next_offset` with the same filters. For a top list, label it as a preview and report whether further rows may exist. Empty means no matching returned records under these filters, not zero hotel risk.
 
-To reproduce the frontend room-type pie, read all pages for its date window and threshold, omitting the table-only reservation-ID and room-type filters. Aggregate those page counts by category. To reproduce the table, apply its ID/category filters. A filtered top-five mix cannot be compared with the whole pie.
+To reproduce the Auctores app's room-type chart, read all pages for its date window and threshold, omitting the table-only reservation-ID and room-type filters. Aggregate those page counts by category. To reproduce the table, apply its ID/category filters. A filtered top-five mix cannot be compared with the whole pie.
 
 ## Answer
 
