@@ -41,7 +41,7 @@ An Auctores account with a hotel connected through its PMS (apaleo or Mews) and 
 - Which booking channels have the highest cancellation and no-show rates, and how close to arrival do guests cancel?
 - How much revenue did Auctores recover for us last month, and which bookings are behind it?
 - Why is no extra availability suggested on some dates in the next two weeks?
-- How many extra rooms does Smart Overbooking suggest for this weekend, by room type?
+- How many extra rooms does Smart Overbooking suggest for next weekend?
 
 ## Support
 
