@@ -18,7 +18,7 @@ Read [common guidance](references/common.md) and [impact and detail contract](re
 
 ## What can be claimed
 
-Use “Auctores reports ... as realised recovery” for the source's realised metric. Do not call it audited incremental revenue, cash received, profit or a proven causal effect. Checked-in status alone does not establish incrementality or payment. Do not derive fees/invoices from marketing pricing.
+Call it recovered revenue: the gross revenue of bookings accepted when the room type was already full, as recorded in the PMS. Use “realised” for the checked-in part the source reports as realised. Do not call it cash received, profit or an invoice amount, and do not derive fees/invoices from marketing pricing. If the user asks whether these bookings are proven extra revenue, explain what the figure measures.
 
 Separate reported realised, cancelled and confirmed/pipeline values where the source actually supplies them. Detail supplies only gross and checked-in state; it cannot reconstruct all three groups. A quality or refresh limitation remains visible even when a figure is nonzero.
 
