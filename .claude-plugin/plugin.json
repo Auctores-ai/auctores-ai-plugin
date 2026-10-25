@@ -9,6 +9,9 @@
     "url": "https://www.auctores.ai"
   },
   "homepage": "https://www.auctores.ai",
+  "repository": "https://github.com/Auctores-ai/auctores-ai-plugin",
+  "documentationUrl": "https://www.auctores.ai/resources/use-auctores-in-claude",
+  "supportUrl": "mailto:info@auctores.ai",
   "keywords": [
     "hotel",
     "revenue management",
@@ -28,5 +31,6 @@
     "staffing",
     "guest communication"
   ],
-  "privacyPolicyUrl": "https://app.auctores.ai/overbooking/privacy"
+  "privacyPolicyUrl": "https://app.auctores.ai/overbooking/privacy",
+  "termsOfServiceUrl": "https://app.auctores.ai/overbooking/terms"
 }
