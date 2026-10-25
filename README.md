@@ -32,7 +32,7 @@ Ask Claude about your hotel's cancellations and no-shows. This plugin connects C
 
 ## Requirements
 
-An Auctores account with a hotel connected through its PMS (apaleo or Mews) and set up in Auctores. Through this plugin, Cancellation Intelligence is currently available for apaleo hotels.
+An Auctores account with a hotel connected through its PMS (apaleo or Mews) and set up in Auctores.
 
 ## Example prompts
 
