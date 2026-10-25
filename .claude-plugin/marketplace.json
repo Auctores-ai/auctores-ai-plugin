@@ -9,7 +9,7 @@
     {
       "name": "auctores",
       "source": "./",
-      "description": "Ask Claude about your hotel's cancellations and no-shows, with ready-made workflows for the revenue meeting, bookings likely to cancel, recovered revenue and availability changes. Read-only."
+      "description": "Put guest-arrival predictions into hotel management: workflows for the revenue meeting, Smart Overbooking and recovered revenue, plus data for front office, staffing, guest messages and marketing."
     }
   ]
 }

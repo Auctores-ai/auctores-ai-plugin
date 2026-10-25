@@ -1,6 +1,6 @@
 # Auctores for Claude
 
-Ask Claude about your hotel's cancellations and no-shows. This plugin connects Claude to your [Auctores](https://www.auctores.ai) account, read-only, and adds five ready-made workflows: a briefing for your revenue meeting, a review of bookings likely to cancel, a Cancellation Intelligence analysis, a recovered-revenue report and an explanation of availability changes.
+Put guest-arrival predictions into the way your hotel works. The Auctores plugin connects Claude to your [Auctores](https://www.auctores.ai) account, read-only, and adds five workflows: a briefing for the revenue meeting, Smart Overbooking suggestions and why availability changed, a recovered-revenue report, a review of bookings likely to cancel or not show up, and a Cancellation Intelligence analysis. Claude can use the same data, in chats and scheduled tasks, to plan front office and housekeeping staff, guest messages and marketing on the guests likely to arrive.
 
 ## What this plugin contains
 
@@ -42,6 +42,9 @@ An Auctores account with a hotel connected through its PMS (apaleo or Mews) and 
 - How much revenue did Auctores recover for us last month, and which bookings are behind it?
 - Why is no extra availability suggested on some dates in the next two weeks?
 - How many extra rooms does Smart Overbooking suggest for next weekend?
+- Show expected occupancy for each day of the week after next, so we can plan staff and housekeeping.
+- Draft a short, friendly pre-arrival message for the bookings arriving in the next three weeks that are likely to cancel.
+- How many rooms do we expect to actually be occupied next Saturday?
 
 ## Support
 
