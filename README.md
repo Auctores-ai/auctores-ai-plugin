@@ -32,7 +32,7 @@ Put guest-arrival predictions into the way your hotel works. The Auctores plugin
 
 ## Requirements
 
-An Auctores account with a hotel connected through its PMS (apaleo or Mews) and set up in Auctores.
+An Auctores account with a hotel connected through its PMS (Apaleo or Mews) and set up in Auctores.
 
 ## Example prompts
 
